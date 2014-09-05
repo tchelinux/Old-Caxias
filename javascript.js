@@ -32,6 +32,17 @@ $('#buscar_caminho').on('click', function(e) {
     }
 });
 
+$('.schedule-tbl a').on('click', function(event) {
+     event.preventDefault();
+     var location_anchor = $(this).attr('href');
+     if(location_anchor == '#'){
+        location_anchor = 'html';
+     }
+     $('html, body').animate({
+      scrollTop: $(location_anchor).offset().top
+      }, 1000);
+});
+
 //map
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
