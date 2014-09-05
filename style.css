@@ -94,17 +94,34 @@ h2.subtitle {
 }
 
 
-.schedule-tbl {
+.schedule-tbl table {
+	border-collapse: collapse;
+	font-size: 1em;
 	background: #fff;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
-	padding: 20px;
 }
 
-.schedule-tbl table {
-	border-collapse: collapse;
-	font-size: 1em;
+.schedule-tbl th{
+    text-align:center;
+}
+
+.schedule-tbl td, .schedule-tbl th{
+    border: 1px solid #ddd;
+}
+
+.schedule-tbl span {
+    width:100%;
+    display:block;
+}
+
+.schedule-tbl .schedule-empty{
+    text-align:center;
+}
+
+.schedule-tbl a, a:hover, a:active, a:focus {
+    color: inherit;
 }
 
 #eventick{
