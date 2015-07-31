@@ -225,7 +225,7 @@ footer {
     line-height: 150px;
 }
 .photo {
-    display:table-cell;
+    display:inline-block;
     max-width: 200px;
     max-height: 150px;
 }
