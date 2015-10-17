@@ -32,7 +32,7 @@ $('#buscar_caminho').on('click', function(e) {
     }
 });
 
-$('.schedule-tbl a').on('click', function(event) {
+$('.schedule-tbl a').not('.presentation').on('click', function(event) {
      event.preventDefault();
      var location_anchor = $(this).attr('href');
      if(location_anchor == '#'){
