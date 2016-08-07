@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TchêLinux Caxias do Sul - 2015</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style type="text/css">
+          html { height: 100% }
+          body { height: 100%; margin: 0; padding: 0 }
+          #map_canvas { height: 100% }
+        </style>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                 <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">TchêLinux</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                      <ul class="nav navbar-nav">
+                        <li style="display:none;"><a href="#sobre">Sobre</a></li>
+                        <li><a href="#inscricao">Inscrições</a></li>
+                        <li><a href="#programacao">Programação</a></li>
+                        <li><a href="#palestras">Palestras</a></li>
+                        <li><a href="#certificados">Certificados</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#apoio">Apoio</a></li>
+                        <li><a href="#edicoes">Edições</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+
+            </div>
+        </nav>
+        <header class="header">
+          <div class="wrapper">
+            <h1 class="logo-name">
+              <a class="logo-link" href="#" title="TchêLinux Caxias do Sul" itemprop="name">TchêLinux <br/>Caxias do Sul</a>
+            </h1>
+            <h2 class="tagline">12 de Setembro de 2015, FTEC - Caxias do Sul</h2>
+          </div>
+        </header>
+        <section id="sobre">
+            <div class ="container">
+            <h2 class="subtitle">Sobre</h2>
+            <p>
+                O grupo de usuários de Software Livre TchêLinux, em parceria com a FTEC Caxias do Sul, tem o prazer de convidar a comunidade, independente do nível de conhecimento e experiência com tecnologia, software livre e áreas afins, para participar do Seminário de Tecnologia em Software Livre TchêLinux.
+            </p>
+            <p>
+                O evento ocorrerá no dia 12 de Setembro, a partir das 8:30h, na FTEC de Caxias do Sul.
+            </p>
+            </div>
+        </section>
+        <section id="inscricao">
+          <div class="container">
+            <h2 class="subtitle">Inscrições</h2>
+            <p>
+                A participação no evento é gratuita, porém os participantes são incentivados a trazer 2kg de alimentos não perecíveis (exceto sal) que serão doados a uma instituição beneficente.
+            </p>
+            <p>
+                Os alimentos serão recebidos no momento do credenciamento.
+            </p>
+          </div>
+        </section>
+        <section id="programacao">
+        <div class="container">
+          <h2 class="subtitle">Programação</h2>
+            <div class="schedule-tbl">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th class="schedule-time">Horário</th>
+                            <th class="schedule-slot">Sala - 1</th>
+                            <th class="schedule-slot">Sala - 2</th>
+                            <th class="schedule-slot">Sala - 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="schedule-other">
+                           <td class="schedule-time">08h30</td>
+                           <td class="schedule-empty" colspan="3">Recepção / Credenciamento</td>
+                        </tr>
+
+                        <tr class="schedule-other">
+                            <td class="schedule-time">08h45</td>
+                            <td class="schedule-empty" colspan="3">Abertura</td>
+                        </tr>
+                        
+                        <tr class="schedule-other">
+                            <td class="schedule-time">09h00</td>
+                            <td class="schedule-slot">
+                                <a href=#speech-1>
+                                    <span class="description">
+                                        CSS com Estilo
+                                    </span>
+                                    <span class="speaker">Eliane Maciel e Matheus Pereira</span>
+                                </a>
+                                <a class="presentation" href="http://matheper.github.io/css_estilo">Visualizar apresentação</a>
+                            </td>
+                            <td class="schedule-slot">
+                                <a href=#speech-2>
+                                    <span class="description">
+                                        Startup e a força do Linux
+                                    </span>
+                                    <span class="speaker">Pandolfo</span>
+                                </a>
+                            </td>
+                            <td class="schedule-slot">
+                                <a href=#speech-3>
+                                    <span class="description">
+                                        Segurança Avançada no Apache
+                                    </span>
+                                    <span class="speaker">Marcus Burghardt</span>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr class="schedule-other">
+                            <td class="schedule-time">09h40</td>
+                            <td class="schedule-slot">
+                                <a href=#speech-4>
+                                    <span class="description">
+                                        Desenvolvimento Web com Django!
+                                    </span>
+                                    <span class="speaker">Lucas Vieira May</span>
+                                </a>
+                                <a class="presentation" href="http://pt.slideshare.net/lucasvieiramay/desenvolvimento-web-com-django">Visualizar apresentação</a>
+                            </td>
+                            <td class="schedule-slot">
+                                <a href=#speech-5>
+                                    <span class="description">
+                                    -
+                                    </span>
+                                    <span class="speaker"></span>
+                                </a>
+                            </td>
+                            <td class="schedule-slot">
+                                <a href=#speech-6>
+                                    <span class="description">
+                                        Bacula - Getting Started
+                                    </span>
+                                    <span class="speaker">Andressa dos Santos Ferreira Natario</span>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr class="schedule-other">
+                            <td class="schedule-time">10h20</td>
+                            <td class="schedule-slot">
+                                <a href=#speech-7>
+                                    <span class="description">
+                                        Primeiros passos com Splinter
+                                    </span>
+                                    <span class="speaker">Adriano Margarin</span>
+                                </a>
+                                <a class="presentation" href="http://pt.slideshare.net/adrianomargarin/primeiros-passo-com-splinter-52204833">Visualizar apresentação</a>
+                            </td>
+                            <td class="schedule-slot">
+                                <a href=#speech-8>
+                                    <span class="description">
+                                        Plone show
+                                    </span>
+                                    <span class="speaker">Luciano Camargo Cruz</span>
+                                </a>
+                            </td>
+                            <td class="schedule-slot">
+                                <a href=#speech-9>
+                                    <span class="description">
+                                        Precisamos Falar sobre Administração de Sistemas
+                                    </span>
+                                    <span class="speaker">Carlos Alberto Parisotto</span>
+                                </a>
+                                <a class="presentation" href="https://github.com/caparisotto/tchelinuxcx2015">Visualizar apresentação</a>
+                            </td>
+                        </tr>
+
+                        <tr class="schedule-other">
+                            <td class="schedule-time">11h00</td>
+                            <td class="schedule-empty" colspan="3">Coffee</td>
+                        </tr>
+
+                        <tr class="schedule-other">
+                            <td class="schedule-time">11h30</td>
+                            <td class="schedule-slot">
+                                <a href=#speech-10>
+                                    <span class="description">
+                                        Apigilty com Ionic - Impulsione sua Startup!
+                                    </span>
+                                    <span class="speaker">Sérgio Ernane Munhós Hermes</span>
+                                </a>
+                            </td>
+                            <td class="schedule-slot">
+                                <a href=#speech-11>
+                                    <span class="description">
+                                        Software Livre em Operadoras de Telecomunicações
+                                    </span>
+                                    <span class="speaker">Ronaldo Rathis Sacco</span>
+                                </a>
+                            </td>
+                            <td class="schedule-slot">
+                                <a href=#speech-12>
+                                    <span class="description">
+                                        Além do HTTPS - Como (tentar) Aumentar a Segurança de seu Website e Aplicação Web (Beyond HTTPS - How to (try) Improve security in Your Website)
+                                    </span>
+                                    <span class="speaker">Jeronimo Zucco</span>
+                                </a>
+                                <a class="presentation" href="http://pt.slideshare.net/jczucco/alm-do-https">Visualizar apresentação</a>
+                            </td>
+                        </tr>
+
+                        <tr class="schedule-other">
+                            <td class="schedule-time">12h10</td>
+                            <td class="schedule-slot">
+                                <a href=#speech-13>
+                                    <span class="description">
+                                        Por que Ruby on Rails?
+                                    </span>
+                                    <span class="speaker">Marcelo Boeira</span>
+                                </a>
+                            </td>
+                            <td class="schedule-slot">
+                                <a href=#speech-14>
+                                    <span class="description">
+                                        Introdução ao Python e como aprender a programar sozinho com ferramentas gratuitas
+                                    </span>
+                                    <span class="speaker">Eduardo Silveira</span>
+                                </a>
+                                <a class="presentation" href="https://prezi.com/gos_ap_oz0vz/introducao-ao-python-e-como-aprender-a-programar-sozinho-com/">Visualizar apresentação</a>
+                            </td>
+                            <td class="schedule-slot">
+                                <a href=#speech-15>
+                                    <span class="description">
+                                        Open Hybrid Cloud
+                                    </span>
+                                    <span class="speaker">Amador Pahim</span>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr class="schedule-other">
+                            <td class="schedule-time">12h50</td>
+                            <td class="schedule-empty" colspan="3">Encerramento</td>
+                        </tr>
+                   
+                    </tbody>
+                </table>
+            </div>
+          </div>
+        </section>
+
+        <section id="palestras">
+            <div class="container">
+                <h2 class="subtitle">Palestras</h2>
+                <div id="speech-1" class=speech-container>
+                    <span class="speech-time">09h00</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            CSS com Estilo
+                        </h3>
+                        <span class="speech-description">
+                            CSS é um padrão para estilização de páginas Web com limitações que tornam seu desenvolvimento uma tarefa árdua, repetitiva e de difícil manutenção.Pré-processadores, como Sass e LESS, adicionam condicionais (if/else), variáveis, loops, operações matemáticas, regras aninhadas, mixins e importações inline, que aproximam o CSS à uma linguagem de programação. Assim, o código fica mais legível e melhor estruturado. Pretende-se apresentar alguns conceitos de pré-processadores de CSS exemplificando-os com Sass.
+                        </span>
+                        <h3 class="speaker-name">Eliane Maciel e Matheus Pereira</h3>
+                        <span class="speaker-bio">
+                            Eliane Faveron Maciel:
+                                Desenvolvedora Front-end no Instituto Communitas, estudante Ciência da Computação na Universidade de Caxias do Sul.
+                            </br>
+                            Matheus Pereira:
+                                Desenvolvedor de software no Instituto Communitas, Mestrando em Inteligência Artificial na UFRGS, bacharel em Ciência da Computação pela UCS.
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-2" class=speech-container>
+                    <span class="speech-time">09h00</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Startup e a força do Linux
+                        </h3>
+                        <span class="speech-description">
+                            Cuidados simples que uma startup de base tecnológica pode ter, a fim de potencializar a força do Linux no contexto do negócio para obter resultados positivos!                                                        
+                        </span>
+                        <h3 class="speaker-name">Pandolfo</h3>
+                        <span class="speaker-bio">
+                            Vivencio de que forma a economia esta se transformando com as tecnologias inovadores e como as empresas podem tirar melhor proveito das oportunidades para prosperarem de forma ágil.Sou Especialista em impulsionar - estrategicamente - empresas inovadoras com apoio das Redes de Negócio e da tecnologia.Minha formação inclui Pós Graduação em Governança e Estratégia de TI, Pós Graduação em Marketing e Comunicação, Especialização em Gestão Empresarial e Graduação em Administração de Empresas.Invisto e presto mentoria em Startups e atuo como Membro de Conselhos Administrativos e Consultivos em diversas empresas inovadoras.
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-3" class=speech-container>
+                    <span class="speech-time">09h00</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Segurança Avançada no Apache
+                        </h3>
+                        <span class="speech-description">
+                            O objetivo da palestra não é mostrar técnicas bem conhecidas ou configurações básicas de segurança que as boas práticas recomendam. Mostrarei algumas técnicas de segurança mais complexas para deixar o servidor Apache HTTP Server mais seguro e protegido contra alguns ataques sofisticados. Bloqueios de ferramentas de Pentest automatizadas, regras inteligentes de bloqueios baseadas em comportamento e conteúdo dinâmico, etc. As técnicas serão mostradas com o maior nível de realidade possível. O conceito e a lógica das técnicas junto com a demonstração prática certamente deixarão os assuntos esclarecidos para que os administradores possam implementá-las em seus ambientes.
+                        </span>
+                        <h3 class="speaker-name">Marcus Burghardt</h3>
+                        <span class="speaker-bio">
+                            Consultor Especialista em Segurança da Informação na MBSEC Segurança da Informação e instrutor de cursos voltados à Segurança da Informação. Especialista em Redes, Forense, PenTest, Firewalls, IDSs e outros segmentos da Segurança da Informação. Cerca de 13 anos de experiência em Redes, Servidores Linux e Servidores Windows. Principais certificações: RHCE, RHCX, RHCI, LPIC-2, Microsoft, Citrix, ITIL... Mestre Cervejeiro Caseiro nas poucas horas vagas. : )
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-4" class=speech-container>
+                    <span class="speech-time">09h40</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Desenvolvimento Web com Django!
+                        </h3>
+                        <span class="speech-description">
+                            O que é Django, quem usa Django, introdução ao modelo MVT e como fazer um site em django.
+                        </span>
+                        <h3 class="speaker-name">Lucas Vieira May</h3>
+                        <span class="speaker-bio">
+                            Python Developer na empresa HadiCom/Instituto Communitas.
+                        </span>
+                    </div>
+                </div>
+                <!--
+                <div id="speech-5" class=speech-container>
+                    <span class="speech-time">09h40</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                        </h3>
+                        <span class="speech-description">
+                        </span>
+                        <h3 class="speaker-name"></h3>
+                        <span class="speaker-bio">
+                        </span>
+                    </div>
+                </div>
+                -->
+                <div id="speech-6" class=speech-container>
+                    <span class="speech-time">09h40</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Bacula - Getting Started
+                        </h3>
+                        <span class="speech-description">
+                            Gerenciamento do Bacula - O que é Bacula. Porque utilizar essa ferramenta e o que esperar dela. Interações entre os serviços. Conhecendo os arquivos de configurações. Entendendo Pools, Volumes e Filesets. Utilização Básica: Configurar um novo cliente, Rodar um backup e restore, Cancelar o backup, Verificar status e outras funções.
+                        </span>
+                        <h3 class="speaker-name">Andressa dos Santos Ferreira Natario</h3>
+                        <span class="speaker-bio">
+                            Analista de Suporte - MBSEC Segurança da Informação.
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-7" class=speech-container>
+                    <span class="speech-time">10h20</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Primeiros passos com Splinter
+                        </h3>
+                        <span class="speech-description">
+                            Splinter é uma ferramenta para realizar testes de aceitação de aplicações web. Por onde começar? Realizando login no Django. Preenchendo um formulário e gravando-o. Realizando buscas no google. Browser based drivers e Headless drivers.
+                        </span>
+                        <h3 class="speaker-name">Adriano Margarin</h3>
+                        <span class="speaker-bio">
+                            Bacharelando em Sistemas de Informação na Universidade de Caxias do Sul. Membro assíduo do Diretório Acadêmico de mesmo curso. Desenvolvedor Python/Django a 3+ anos. Colaborador na empresa Pull4Up (pull4up.com.br) à 18 meses.
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-8" class=speech-container>
+                    <span class="speech-time">10h20</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Plone show
+                        </h3>
+                        <span class="speech-description">
+                            Demostrar as principais funcionalidades do Plone (plone.org) na prática.
+                        </span>
+                        <h3 class="speaker-name">Luciano Camargo Cruz</h3>
+                        <span class="speaker-bio">
+                            Programador Python, WEB com Zope/Plone; Diretor técnico na empresa HaDiCom; pesquisador/desenvolvedor Instituto Communitas; Bacharel em Ciência da Computação pela Universidade de Caxias do Sul; Estudante MBA na IMED; ADORADOR de Python, Software Livre, Jack Daniel's, Games, Caça, Pesca, Motociclista...
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-9" class=speech-container>
+                    <span class="speech-time">10h20</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Precisamos Falar sobre Administração de Sistemas
+                        </h3>
+                        <span class="speech-description">
+                            O SysAdmin é o responsável pela configuração e manutenção dos servidores de uma rede. Ser sysadmin é fácil, você só precisa saber sobre: TCP, UDP, ICMP, Storage, Virtualização, Monitoramento, Backup, VPN, Linux, Windows(sim, também), Servidor Web, Proxy, DNS, DHCP, Firewall, Banco de Dados, Java, AD, LDAP, RAID, SSH, Vim, Compartilhamento de Arquivos, Compilação de Kernel, Roteamento, Gerenciamento de Pacotes, Systemd, Impressoras, E-mail, Criptografia, Containers, SELinux, Gerenciamento de Tempo, Psicologia, Xkcd e Breaking Bad, entre outros. Essa apresentação tem o objetivo de orientar Sysadmins(e também desenvolvedores) a gerenciar melhor suas funções, apresentar ideias, ferramentas e referências que possam trazer soluções para o cotidiano.
+                        </span>
+                        <h3 class="speaker-name">Carlos Alberto Parisotto</h3>
+                        <span class="speaker-bio">
+                            Certificado LPIC-2, tecnólogo em Redes de Computadores pela FTEC, trabalha desde 2008 com Linux. Analista de suporte na MBSEC Segurança da Informação. Palestrante em seis eventos Tchelinux Caxias do Sul e Porto Alegre.
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-10" class=speech-container>
+                    <span class="speech-time">11h30</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Apigilty com Ionic - Impulsione sua Startup!
+                        </h3>
+                        <span class="speech-description">
+                            De forma prática irei demonstrar como integrar estas duas tecnologias, para incentivar desenvolvedores a seguirem boas práticas de desenvolvimento de aplicativos mobile sem a necessidade de uma carga de conhecimento muito elevado.
+                            Logo, irei criar um mini aplicativo que consuma a API que montaremos na própria palestra.
+                            Demonstrarei recursos importantes do apigility e do Ionic.
+                            Logicamente, irei apontar livros e documentação para as pessoas que quiserem se aprofundar pois de fato essa a ponta do Iceberg.
+                            Fomentando o conhecimento acredito que isso possa incentivar e aguaçar conceitos e conhecimentos.
+                            Sabemos que a grande comunidade tem medo de ZF2 por tratar ele com uma curva de aprendizado muito alta. Irei colocar que isso não é verdade. Acredite!
+                            <br/>https://apigility.org/
+                            <br/>http://ionicframework.com/
+                        </span>
+                        <h3 class="speaker-name">Sérgio Ernane Munhós Hermes</h3>
+                        <span class="speaker-bio">
+                            Desenvolvedor de Sistemas da Informação na FTEC Faculdades.
+                            Estudo e trabalho com PHP a mais de 8 anos.
+                            Estudo e trabalho com Zend Framework 1 e 2.<br/>
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-11" class=speech-container>
+                    <span class="speech-time">11h30</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Software Livre em Operadoras de Telecomunicações
+                        </h3>
+                        <span class="speech-description">
+                            * Softwares livres que pode ser utilizados por operadoras;<br/>
+                            * Centrais Telefônicas de código aberto;<br/>
+                            * Roteamento de chamadas entre as centrais telefônicas;<br/>
+                            * Comutadores de Voz de código aberto;<br/>
+                            * Roteamento entre os comutadores voz e entre operadoras para tráfego nacional e internacional;<br/>
+                            * Estrutura dos bancos de dados de código aberto;<br/>
+                            * Integração entre os bancos de dados, sistemas, centrais telefônicas e comutadores de voz;<br/>
+                            * Estrutura de software livre que garante o up time elevado dos serviços;<br/>
+                            * Segurança de todo ambiente OpenSource.
+                        </span>
+                        <h3 class="speaker-name">Ronaldo Rathis Sacco</h3>
+                        <span class="speaker-bio">
+                            Gerente de Telecom, sócio proprietário da empresa Saperx; Graduado em Ciência da Computação; Pós Graduado em Segurança da Informação.
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-12" class=speech-container>
+                    <span class="speech-time">11h30</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                        Além do HTTPS - Como (tentar) Aumentar a Segurança de seu Website e Aplicação Web
+                        </h3>
+                        <span class="speech-description">
+                            Segurança em websites é uma tarefa difícil. Apenas uma brecha em um erro de desenvolvimento ou uma configuração esquecida e mal feita e seu portal pode ser comprometido. Não basta mais somente implementar alguns controles ou ter alguns cuidados na hora da implementação de uma aplicação que será exposta para web. Essa palestra irá abordar como (tentar) aumentar a segurança se seu website através da implementação de alguns controles pró-ativos como: hardening TLS, HSTS, certificate and  public key pinning, HTTP headers, XSS protections, Cookies protections,  Content Security Policy, Hardening Web Server, OWASP Proactive Controls  Project.
+                        </span>
+                        <h3 class="speaker-name">Jeronimo Zucco</h3>
+                        <span class="speaker-bio">
+                            Bacharel em Ciência da Computação pela Universidade de Caxias do Sul e Pós-Graduado em Gerência e Segurança de Redes de Computadores também pela UCS. Certificado CISSP (Certified Information Systems Secure Profissional), membro do projeto OWASP (Open Web Application Security Project) desde 2010. Já palestrou em diversos eventos sobre o tema segurança de sistemas: You Shot The Sheriff, FISL, Tchelinux, Python Brasil, ABIN, PoaSec, GTS e OWASP.
+                        </span>
+                    </div>
+                </div>
+
+
+
+
+                <div id="speech-13" class=speech-container>
+                    <span class="speech-time">12h10</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Por que Ruby on Rails?
+                        </h3>
+                        <span class="speech-description">
+                            Conheça a stack e entenda todas as vantagens de trabalhar em um ambiente mantido por uma comunidade extremamente ativa e como isso influência na sua produtividade.
+                        </span>
+                        <h3 class="speaker-name">Marcelo Boeira</h3>
+                        <span class="speaker-bio">
+                            Engenheiro Eletrônico pela Unisinos, trabalhando com desenvolvimento de software há 5 anos, últimos 2 com Ruby. Atualmente trabalha na Globo.com com encoding de vídeo. Apaixonado por desenvolvimento de software, eletrônica e sistemas embarcados.
+                        </span>
+                    </div>
+                </div>
+
+                <div id="speech-14" class=speech-container>
+                    <span class="speech-time">12h10</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Introdução ao Python e como aprender a programar sozinho com ferramentas gratuitas
+                        </h3>
+                        <span class="speech-description">
+                            Python é uma linguagem de programação de alto nível "livre" que suporta diversos paradigmas, como o orientado a objetos, imperativo, funcional e procedural. A palestra tem como objetivo relatar a experiência do aprendizado de um nova linguagem (como o Python) através de ferramentas gratuitas e introduzir o participante na linguagem estudada, além de citar ferramentas gratuitas disponíveis no mercado para auxiliar o aprendizado de novas linguagens de programação.
+                        </span>
+                        <h3 class="speaker-name">Eduardo Silveira</h3>
+                        <span class="speaker-bio">
+                        </span>
+                    </div>
+                </div>
+
+                <div id="speech-15" class=speech-container>
+                    <span class="speech-time">12h10</span>
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Open Hybrid Cloud
+                        </h3>
+                        <span class="speech-description">
+                            Com a virtualização sendo o padrão atual nos Data Centers e o crescimento da disponibilidade das tecnologias de Cloud Computing, as empresas procuram formas de integrar esses ambientes reduzindo a carga de trabalho e o tempo necessário para entrega de aplicações em qualquer ambiente, seja físico, virtualizado, cloud privada ou cloud pública. Essa apresentação tem o objetivo de mostrar as principais soluções em Software Livre que compõem a "Open Hybrid Cloud". Falaremos sobre KVM, oVirt, OpenStack e ManageIQ, além de tecnologias complementares.
+                        </span>
+                        <h3 class="speaker-name">Amador Pahim</h3>
+                        <span class="speaker-bio">
+                            Embaixador do Projeto Fedora. Colaborador da Comunidade oVirt. Senior Software Maintenance Engineer no Time de Virtualziação da Red Hat.
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="certificados">
+          <div class="container">
+            <h2 class="subtitle">Certificados</h2>
+            <div class="individual-link">
+                <a target="_blank" href="https://github.com/TcheLinux/certificadoscaxias/tree/master/2015">Certificados para download!</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="local">
+        <div class="container">
+          <h2 class="subtitle">Local</h2>
+          <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3483.682705366813!2d-51.218478999999995!3d-29.174021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea2ffd3b94dbf%3A0x3398f5530c56890c!2sFtec+Faculdades!5e0!3m2!1spt-BR!2s!4v1406386338228" width="100%" height="450"></iframe>-->
+          <p>
+          Esse ano o TchêLinux traz algumas novidades, a começar pelo ambiente.
+          </p>
+          <p>
+          O evento acontecerá no CIEM - Centro de Inovação e Empreendedorismo da FTEC Caxias do Sul, localizado ao lado do prédio principal.
+          </p>
+          <div id="imagens">
+              <img src="https://scontent-atl1-1.xx.fbcdn.net/hphotos-xpt1/t31.0-8/1401190_920699691328289_3233921780860087318_o.jpg"/>
+              <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xft1/t31.0-8/11411685_920699681328290_8444271572053353970_o.jpg"/>
+              <br/>
+              <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/11045488_920699487994976_1640738192957074763_o.jpg"/>
+              <img src="https://scontent-atl1-1.xx.fbcdn.net/hphotos-xft1/t31.0-8/11536412_920699504661641_3807007452773663703_o.jpg"/>
+          </div>
+          <br/>
+          <p>
+            FTEC - Caxias do Sul
+          </p>
+          <p>
+            R. Gustavo Ramos Sehbe, 107 - Bairro Cinquentenário.
+            Caxias do Sul - Rio Grande do Sul
+          </p>
+          <div id="map_canvas" style="width: 100%; height: 350px;"></div>
+          <input type="text" id="search-route" class="form-control" placeholder="Digite sua localização">
+          <div id="directions-panel"></div>
+        </div>
+        </section>
+        <section id="apoio">
+            <div class="container">
+                <h2 class="subtitle">Apoio</h2>
+                <h4>Institucional</h4>
+                <ul class="apoio-list">
+                  <li class="apoio-item">
+                    <a href="http://ftec.com.br" title="FTEC" class="apoio-logo apoio-link" target="_blank">
+                      <img src="images/ftec.png" alt="FTEC" class="photo"/>
+                    </a>
+                  </li>
+                  <li class="apoio-item">
+                    <a href="http://www.trinopolo.com.br/" title="Trino Polo" class="apoio-logo apoio-link" target="_blank">
+                      <img src="images/trinopolo.jpg" alt="Trino Polo" class="photo"/>
+                    </a>
+                  </li>
+                </ul>
+                <h4>Patrocínio</h4>
+                <ul class="apoio-item">
+                    <li class="apoio-item">
+                      <a href="http://www.communitas.org.br/" title="Instituto Communitas" class="apoio-logo apoio-link" target="_blank">
+                        <img src="images/communitas.jpg" alt="Instituto Communitas" class="photo"/>
+                      </a>
+                    </li>
+                    <li class="apoio-item">
+                      <a href="http://www.flexxo.com.br/" title="Flexxo" class="apoio-logo apoio-link" target="_blank">
+                        <img src="images/flexxo.jpg" alt="Flexxo" class="photo"/>
+                      </a>
+                    </li>
+                    <li class="apoio-item">
+                      <a href="http://gruppen.com.br/" title="Gruppen" class="apoio-logo apoio-link" target="_blank">
+                        <img src="images/gruppen.jpg" alt="Gruppen" class="photo"/>
+                      </a>
+                    </li>
+                    <li class="apoio-item">
+                      <a href="http://www.hadi.com.br" title="HaDiCom" class="apoio-logo apoio-link" target="_blank">
+                        <img src="images/hadi.jpg" alt="HaDiCom" class="photo"/>
+                      </a>
+                    </li>
+                    <li class="apoio-item">
+                      <a href="http://www.integrasul.com.br/" title="Integrasul" class="apoio-logo apoio-link" target="_blank">
+                        <img src="images/integrasul.jpg" alt="Integrasul" class="photo"/>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="edicoes">
+          <div class="container">
+            <h2 class="subtitle">Edições anteriores</h2>
+            <div class="individual-link">
+                <a href="2014/index.html">TchêLinux 2014</a>
+            </div>
+          </div>
+        </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline" id="footer-menu">
+                        <li class="active"><a href="#">TchêLinux</a></li>
+                        <li><a href="#programacao">Programação</a></li>
+                        <li><a href="#palestras">Palestras</a></li>
+                        <li><a href="#certificados">Certificados</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#apoio">Apoio</a></li>
+                        <li><a href="#edicoes">Edições</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="github">
+                <a href="https://github.com/TcheLinux/caxias2014" target="_brank">
+                    <img src="images/GitHub-Mark-32px.png"/>
+                    <p class="copyright text-muted small">Acesse o TchêLinux Caxias do Sul 2015 no GitHub</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div style="display:none;">
+        <script type="text/javascript" src="javascript.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.min.js"></script>
+    </div>
+    </body>
+</html>
