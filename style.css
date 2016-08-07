@@ -45,35 +45,6 @@ header {
     text-decoration: none;
 }
 
-.call-action-area .call-action-link, .btn {
-    background-color: #fddd52;
-    background-image: -moz-linear-gradient(top, #fddd52 30%, #f0a303 150%);
-    background-image: -webkit-linear-gradient(top, #fddd52 30%, #f0a303 150%);
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fddd52', endColorstr='#f0a303');
-    background-image: linear-gradient(top, #fddd52 30%, #f0a303 150%);
-    color: #2b2b2b;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4), inset 0 -2px 3px 0 #cc7f0a, inset 0 1px 0 0 #fff9b1;
-    border-radius: 40px;
-}
-
-.call-action-area .call-action-link, .btn {
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 2em;
-    line-height: 1em;
-    vertical-align: center;
-    letter-spacing: -0.02em;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    margin-top: 50px;
-}
-
 body { margin-top: 50px; }
 
 section {
