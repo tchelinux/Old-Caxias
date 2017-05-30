@@ -237,19 +237,3 @@ a.apoio-logo.apoio-link:hover {
 #edicoes{
     padding-bottom: 50px;
 }
-
-.aniversario{
-  position: absolute;
-  left: 80px;
-  width: 85px;
-}
-@media (max-width: 1024px) {
-  .aniversario{
-    left: 40px;
-  }
-}
-@media (max-width: 850px) {
-  .aniversario{
-    display: none;
-  }
-}
