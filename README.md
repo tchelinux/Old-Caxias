@@ -1,4 +1,4 @@
-TchêLinux Caxias do Sul 2015
+TchêLinux Caxias do Sul 2017
 ============
 
 [caxias.tchelinux.org](http://caxias.tchelinux.org)
